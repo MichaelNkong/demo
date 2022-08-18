@@ -28,7 +28,7 @@ public class ProductService {
 
 
 	private Product filterProducts(Predicate<Product> byId) {
-		// TODO Auto-generated method stub
+		
 		return getAllProducts().stream().filter(byId).findFirst().orElse(null);
 	}
 
